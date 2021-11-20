@@ -1,0 +1,8 @@
+<swiper
+  [slidesPerView]="1.2"
+  [freeMode]="true"
+>
+  <ng-template swiperSlide *ngFor="let movie of movies">
+    <img [src]="movie[imagePath] | poster" [alt]="movie.title">
+  </ng-template>
+</swiper>
